@@ -1,4 +1,4 @@
-import logo from "../assets/logo.png";
+import logo from "@/../public/assets/logo.png";
 import { getCart } from "@/lib/db/cart";
 import { getServerSession } from "next-auth";
 import Image from "next/image";
@@ -14,7 +14,7 @@ async function searchProducts(formData: FormData) {
     const searchQuery = formData.get("searchQuery")?.toString();
 
     if (searchQuery) {
-        redirect("/search?query=" + searchQuery);
+        redirect("/shop/search?query=" + searchQuery);
     }
 }
 
@@ -26,7 +26,10 @@ export default async function Navbar() {
         <div className=" min-h-fit bg-base-100">
             <div className="navbar m-auto min-h-fit max-w-7xl flex-col gap-2 sm:flex-row">
                 <div className="flex-1">
-                    <Link href="/" className=" min-h-fit text-xl normal-case">
+                    <Link
+                        href="/shop"
+                        className=" min-h-fit text-xl normal-case"
+                    >
                         <Image src={logo} height={50} alt="logo" />
                     </Link>
                 </div>

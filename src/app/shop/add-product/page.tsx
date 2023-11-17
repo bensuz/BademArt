@@ -5,7 +5,7 @@ import { redirect } from "next/navigation";
 import { authOptions } from "@/lib/auth";
 
 export const metadata = {
-    title: "Add Product - Flowmazon",
+    title: "Add Product - BademArt",
 };
 
 async function addProduct(formData: FormData) {
@@ -30,7 +30,7 @@ async function addProduct(formData: FormData) {
         data: { name, description, imageUrl, price },
     });
 
-    redirect("/");
+    redirect("/shop");
 }
 
 export default async function AddProductPage() {
