@@ -1,13 +1,12 @@
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import "./globals.css";
-import Navbar from "./Navbar/Navbar";
 import Footer from "./Footer";
+import Navbar from "./Navbar/Navbar";
+import "./globals.css";
+import { Inter } from "next/font/google";
 import SessionProvider from "./SessionProvider";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export const metadata: Metadata = {
+export const metadata = {
     title: "BademArt",
     description: "Art By Bengu Aslan",
 };

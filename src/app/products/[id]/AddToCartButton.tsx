@@ -1,7 +1,6 @@
 "use client";
 
 import { useState, useTransition } from "react";
-import { GiConfirmed } from "react-icons/gi";
 
 interface AddToCartButtonProps {
     productId: string;
@@ -47,10 +46,7 @@ export default function AddToCartButton({
                 <span className="loading loading-spinner loading-md" />
             )}
             {!isPending && success && (
-                <span className="text-success flex items-center justify-center gap-2">
-                    <GiConfirmed />
-                    Added to Cart.
-                </span>
+                <span className="text-success">Added to Cart.</span>
             )}
         </div>
     );
