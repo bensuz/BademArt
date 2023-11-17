@@ -1,36 +1,67 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# BademArt
 
-## Getting Started
+## Table of contents
 
-First, run the development server:
+-   [Overview](#overview)
+-   [Functionality](#functionality)
+-   [Built with](#built-with)
+-   [Links](#links)
+-   [Preview](#preview)
+-   [Screenshot](#screenshot)
+-   [Author](#author)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Overview
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Welcome to BademArt - Art by Bengu Aslan, an immersive platform that brings the vibrant world of artist Bengu Aslan to life. This application serves as a digital canvas where creativity meets technology, providing a unique and dynamic experience for art enthusiasts and shoppers alike.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Functionality
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Creative Homepage:
+Dive into the captivating world of Bengu Aslan through our creatively designed homepage. Experience stunning animations and explore the essence of Bengu's artistic journey.
 
-## Learn More
+Artist Info and Works Page:
+Get to know Bengu Aslan on a personal level. Our artist info page provides insights into Bengu's background, inspirations, and artistic philosophy. The works page showcases an array of mesmerizing creations, each telling a unique story.
 
-To learn more about Next.js, take a look at the following resources:
+Sales Section:
+Navigate seamlessly with our user-friendly navbar. Find the Sales section to explore and shop exclusive products crafted by Bengu Aslan. Elevate your space with art that resonates with passion and creativity.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Ecommerce Experience:
+Indulge in a delightful shopping experience as you explore Bengu Aslan's curated collection. From knitwear and ceramics to photography and digital art, each piece is a masterpiece waiting to find a new home.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### Built with
 
-## Deploy on Vercel
+<p align="left">
+    <a href="https://www.w3.org/html/" target="_blank" title="HTML"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="50" height="50"/> </a> 
+    <a href="https://www.w3schools.com/css/" target="_blank" title="CSS"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="50" height="50"/> </a> 
+    <a href="https://tailwindcss.com/" target="_blank" title="Tailwind"> <img src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" alt="tailwind" width="50" height="50"/> </a> 
+    <a href="https://www.typescriptlang.org/" target="_blank" rel="noreferrer" title="Typescript"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" alt="typescript" width="50" height="50"/> </a>
+    <a href="https://nextjs.org/" target="_blank" rel="noreferrer" title="Next.js"> <img src="https://cdn.worldvectorlogo.com/logos/nextjs-2.svg" alt="nextjs" width="50" height="50"/> </a>
+    <a href="https://www.mongodb.com/" target="_blank" rel="noreferrer" title="MongoDb"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg" alt="mongodb" width="50" height="50"/> </a>
+     <a href="https://www.prisma.io/" target="_blank" rel="noreferrer" title="Prisma"> <img src="https://logowik.com/content/uploads/images/prisma2244.jpg" alt="prisma" width="50" height="50"/> </a>  
+</p>
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+-   Next.js
+-   TypeScript
+-   MongoDb
+-   [tailwindcss](https://tailwindcss.com/) - CSS Framework
+-   Prisma
+-   DaisyUI
+-   Vercel for deployment
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### Links
+
+-   Repo URL: [Source Code](https://github.com/bensuz/BademArt)
+<!-- -   Live Site URL: [Live Site](https://moviebox-0lid.onrender.com/) -->
+
+### Preview
+
+<!-- [![Watch the video](./client/public/screenshots/mq2.webp)](https://youtu.be/ZKFUGMUu_Hc) -->
+
+### Screenshot
+
+<!-- ![](./client/public/screenshots/MovieBox_desktop.png)
+![](./client/public/screenshots/MovieBox_mobile.png) -->
+
+## Author
+
+-   Website - [github](https://github.com/bensuz/)
