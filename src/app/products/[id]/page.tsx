@@ -1,41 +1,63 @@
-import ProductCard from "@/components/ProductCard";
+import PriceTag from "@/components/PriceTag";
 import { prisma } from "@/lib/db/prisma";
 import { Metadata } from "next";
+import Image from "next/image";
+import { notFound } from "next/navigation";
+import { cache } from "react";
+import AddToCartButton from "./AddToCartButton";
+import { incrementProductQuantity } from "./actions";
 
-interface SearchPageProps {
-    searchParams: { query: string };
-}
-
-export function generateMetadata({
-    searchParams: { query },
-}: SearchPageProps): Metadata {
-    return {
-        title: `Search: ${query} - BademArt`,
+interface ProductPageProps {
+    params: {
+        id: string;
     };
 }
 
-export default async function SearchPage({
-    searchParams: { query },
-}: SearchPageProps) {
-    const products = await prisma.product.findMany({
-        where: {
-            OR: [
-                { name: { contains: query, mode: "insensitive" } },
-                { description: { contains: query, mode: "insensitive" } },
-            ],
-        },
-        orderBy: { id: "desc" },
-    });
+const getProduct = cache(async (id: string) => {
+    const product = await prisma.product.findUnique({ where: { id } });
+    if (!product) notFound();
+    return product;
+});
 
-    if (products.length === 0) {
-        return <div className="text-center">No products found</div>;
-    }
+export async function generateMetadata({
+    params: { id },
+}: ProductPageProps): Promise<Metadata> {
+    const product = await getProduct(id);
+
+    return {
+        title: product.name + " - Flowmazon",
+        description: product.description,
+        openGraph: {
+            images: [{ url: product.imageUrl }],
+        },
+    };
+}
+
+export default async function ProductPage({
+    params: { id },
+}: ProductPageProps) {
+    const product = await getProduct(id);
 
     return (
-        <div className="grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-3">
-            {products.map((product) => (
-                <ProductCard product={product} key={product.id} />
-            ))}
+        <div className="flex flex-col gap-4 lg:flex-row lg:items-center">
+            <Image
+                src={product.imageUrl}
+                alt={product.name}
+                width={500}
+                height={500}
+                className="rounded-lg"
+                priority
+            />
+
+            <div>
+                <h1 className="text-5xl font-bold">{product.name}</h1>
+                <PriceTag price={product.price} className="mt-4" />
+                <p className="py-6">{product.description}</p>
+                <AddToCartButton
+                    productId={product.id}
+                    incrementProductQuantity={incrementProductQuantity}
+                />
+            </div>
         </div>
     );
 }
