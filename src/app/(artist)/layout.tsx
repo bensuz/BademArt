@@ -3,6 +3,7 @@ import Navbar from "../../components/Navbar/Navbar";
 import "@/app/globals.css";
 import { Inter } from "next/font/google";
 import SessionProvider from "../../lib/SessionProvider";
+import MainNavbar from "@/components/MainNavbar/Navbar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,10 +19,14 @@ export default function RootLayout({
 }) {
     return (
         <html lang="en">
-            <body className={inter.className + " flex min-h-screen flex-col"}>
+            <body
+                className={
+                    inter.className + " flex min-h-screen flex-col bg-white"
+                }
+            >
                 <SessionProvider>
-                    <Navbar />
-                    <main className="m-auto min-w-[300px] max-w-7xl flex-1 p-4">
+                    <MainNavbar />
+                    <main className="min-w-[300px] max-w-screen flex-1 bg-white p-4">
                         {children}
                     </main>
                 </SessionProvider>
