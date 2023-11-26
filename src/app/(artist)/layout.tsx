@@ -26,7 +26,7 @@ export default function RootLayout({
             >
                 <SessionProvider>
                     <MainNavbar />
-                    <main className="min-w-[300px] max-w-screen flex-1 bg-white p-4">
+                    <main className="max-w-screen min-w-[300px] flex-1 bg-white ">
                         {children}
                     </main>
                 </SessionProvider>

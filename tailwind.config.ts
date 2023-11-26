@@ -16,6 +16,7 @@ const config: Config = {
             },
             fontFamily: {
                 play: ['"Playfair_Display"'],
+                nunito: ['"Nunito_Sans"'],
             },
         },
     },
