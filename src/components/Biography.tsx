@@ -8,9 +8,9 @@ import LogoDraw from "./LogoDraw";
 
 const Biography = () => {
     return (
-        <section className=" max-w-screen flex min-h-fit w-full flex-col items-center overflow-hidden bg-[#E6E3CF] pt-20 text-[#333333] shadow-[-10px_0px_20px_5px_rgba(0,0,0,0.2)] ">
+        <section className=" max-w-screen flex min-h-fit w-full flex-col items-center overflow-hidden  text-slate-700  md:pt-20 ">
             <div className="flex w-full max-w-[1900px] flex-col items-center justify-center  pb-20">
-                <p className="font-play xl:6xl w-full self-center p-4 pt-20 text-2xl  md:p-10 md:text-4xl lg:text-5xl xl:w-2/3">
+                <p className="font-play xl:6xl w-full self-center p-4 pt-20 text-2xl leading-[3rem] md:p-10 md:text-4xl md:leading-[4rem] lg:text-5xl lg:leading-[4rem] xl:w-2/3 xl:leading-[5rem] 2xl:leading-[6rem] ">
                     Bengu Aslan, a multi-talented artist, has embarked on a
                     captivating artistic journey that spans the realms of{" "}
                     <span className="font-bold italic">
@@ -18,7 +18,7 @@ const Biography = () => {
                         design, knitting, and ceramic art.
                     </span>{" "}
                 </p>
-                <p className="font-play xl:6xl w-full self-center  p-4 text-2xl  md:p-10 md:text-4xl lg:text-5xl xl:w-2/3">
+                <p className="font-play xl:6xl w-full self-center p-4  text-2xl leading-[3rem] md:p-10 md:text-4xl md:leading-[4rem] lg:text-5xl lg:leading-[4rem] xl:w-2/3 xl:leading-[5rem] 2xl:leading-[6rem]">
                     Hailing from <span className="font-bold">Turkey</span>,
                     Bengu's vibrant and dynamic{" "}
                     <span className="italic">creations</span> reflect a deep{" "}
@@ -52,17 +52,17 @@ const Biography = () => {
 
             <div className="mx-auto flex h-fit w-full max-w-[1900px] flex-col-reverse xl:flex-row xl:items-end xl:justify-center">
                 <div className="font-nunito flex w-full items-end justify-end p-4 xl:w-2/5 xl:p-10  ">
-                    <p className="w-full self-end justify-self-end text-2xl sm:text-3xl md:text-4xl lg:text-4xl  xl:w-1/2">
+                    <p className="w-full self-end justify-self-end text-2xl italic leading-[3rem] sm:text-3xl  md:text-4xl md:leading-[4rem] lg:text-4xl lg:leading-[4rem] xl:w-1/2 xl:leading-[2rem] 2xl:leading-[3rem]">
                         From crafting bespoke tattoo designs to the tactile
                         artistry of knitting, Bengu&apos;s creations transcend
                         traditional boundaries.
                     </p>
                 </div>
                 <div className="flex w-full flex-col items-start justify-start xl:w-1/2 ">
-                    <h2 className="font-play p-4  pt-20 text-2xl italic sm:text-3xl md:text-4xl lg:text-5xl xl:w-full xl:p-10 xl:text-5xl">
+                    <h2 className="font-play p-4  pt-20 text-2xl font-bold italic leading-[3rem] sm:text-3xl md:text-4xl md:leading-[4rem] lg:text-5xl lg:leading-[4rem] xl:w-full xl:p-10 xl:text-5xl xl:leading-[5rem] 2xl:leading-[6rem]">
                         A Symphony of Mediums:
                     </h2>
-                    <p className="font-play p-4 text-2xl sm:text-3xl md:text-4xl  lg:text-5xl xl:w-full xl:p-10 xl:text-5xl">
+                    <p className="font-play p-4 text-2xl leading-[3rem] sm:text-3xl  md:text-4xl md:leading-[4rem] lg:text-5xl lg:leading-[4rem] xl:w-full xl:p-10 xl:text-5xl xl:leading-[5rem] 2xl:leading-[6rem]">
                         Bengu&apos;s artistic palette is as diverse as her
                         experiences. In the realm of painting, Bengu weaves
                         emotions onto canvas, capturing the essence of her

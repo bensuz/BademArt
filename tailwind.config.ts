@@ -16,7 +16,10 @@ const config: Config = {
             },
             fontFamily: {
                 play: ['"Playfair_Display"'],
-                nunito: ['"Nunito_Sans"'],
+                nunito: ["Nunito_Sans"],
+                roboto: ["Roboto"],
+                jost: ["Jost"],
+                ephesis: ["Ephesis"],
             },
         },
     },

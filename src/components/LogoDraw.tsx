@@ -43,11 +43,11 @@ const LogoDraw = () => {
 
     return (
         <motion.div
-            className="mx-auto  flex h-[60rem] w-1/3 items-start justify-center self-start justify-self-start overflow-hidden "
+            className="mx-auto  flex h-[30rem] w-1/3 items-start justify-center self-start justify-self-start overflow-hidden "
             ref={ref}
             style={{ x: xMove }}
             initial={{ opacity: 0 }} // Set initial opacity to 0
-            animate={{ opacity: 1 }} // Animate opacity to 1 when in view
+            animate={{ opacity: 0.7 }} // Animate opacity to 1 when in view
         >
             <motion.svg
                 xmlns="http://www.w3.org/2000/svg"
